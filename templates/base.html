@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Blog Post</title>
+    <link href="{% static 'css/base.css' %}" rel="stylesheet" >
+    <link href="http://fonts.googleapis.com/css?family=Source+sans+Pro:400">
+</head>
+<body>
+    <header>
+        <h1><a href="{% url 'home' %}">Django Blog</a></h1>
+    </header>
+    <div>
+        {% block content %}
+        {% endblock content %}
+    </div>
+</body>
+</html>
